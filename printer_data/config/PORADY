@@ -1,0 +1,8 @@
+Podsumowanie – Co zmienić w slicerze?
+✅ Retraction Distance: 0,8–2,5 mm (zacznij od 1,5 mm)
+✅ Retraction Speed: 35–45 mm/s
+✅ Coasting: 0,1–0,3 mm³
+✅ Pressure Advance: Warto ustawić w Klipperze
+✅ Z-Hop: 0–0,4 mm (można wyłączyć, jeśli nie ma kolizji)
+✅ Acceleration & Jerk: 1000–2000 mm/s² i 8–15 mm/s
+✅ Flow Rate: Skalibruj ekstrudera
