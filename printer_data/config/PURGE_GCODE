@@ -1,0 +1,8 @@
+# dodac po M109 S
+G92 E0.0 ; reset extruder
+G1 X(first_layer_print_min[0]-10) Y(first_layer_print_min[1]) Z0.8 F6000.0
+G1 X(first_layer_print_min[0]-10) Y(first_layer_print_min[1]+30) E30 F360.0
+G92 E0.0 
+G1 E-0.5 F2100
+G1Y(first_layer_print_min[1]+40) F6000.0
+G92 E0.0
