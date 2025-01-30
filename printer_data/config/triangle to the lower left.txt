@@ -1,0 +1,11 @@
+G92 E0.0 ; reset extruder
+G1 X{first_layer_print_min[0]-10} Y{first_layer_print_min[1]} Z0.8 F6000.0 ; position 10mm left from the lower left of the first layer
+G1 X{first_layer_print_min[0]-10} Y{first_layer_print_min[1]+30} E30 F360.0 ; extrude 30mm of filament in the y direction
+G92 E0.0 ; reset extruder
+G1 X{first_layer_print_min[0]-30} Y{first_layer_print_min[1]+15} E30 F360.0 ; extrude 30mm of filament in both the x and y direction
+G92 E0.0 ; reset extruder
+G1 X{first_layer_print_min[0]-10} Y{first_layer_print_min[1]} E30 F360.0 ; extrude 30mm of filament returning back to the start
+G92 E0.0 ; reset extruder
+G1 E-0.5 F2100 ; small retraction
+G1 X{first_layer_print_min[0]-10} Y{first_layer_print_min[1]-10} F6000.0 ; move an additional 10mm without extruding
+G92 E0.0 ; reset extruder
